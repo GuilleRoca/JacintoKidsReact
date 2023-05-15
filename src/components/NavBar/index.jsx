@@ -5,7 +5,8 @@ const NavBar = () => {
 			<nav className="navbar navbar-expand-lg bg-warning-subtle ">
 				<div className="container-fluid">
 					<a className="navbar-brand" href="#">
-      			<img src="/public/jacitook.png " alt="Logo" width="150" height="auto" className="d-inline-block align-text-center"/></a>
+      			<img src="./jacitook.png " alt="Logo" width="150" height="auto" className="d-inline-block align-text-center"/>
+					</a>
 					<button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span className="navbar-toggler-icon"></span>
 					</button>
@@ -33,7 +34,7 @@ const NavBar = () => {
 						</ul>
 						<form className="d-flex" role="search">
 							<input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-							<button className="btn btn-outline-success" type="submit">Search</button>
+							<button className="btn btn-outline-info" type="submit">Search</button>
 						</form>
 					</div>
 				</div>
