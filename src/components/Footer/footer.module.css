@@ -9,7 +9,7 @@
     display: block;
     padding-right: 2rem;
     padding-bottom: 2rem;
-  }
+}
 .contactoWa div img{
     width: 3rem;
     height: auto;
@@ -17,7 +17,11 @@
     bottom: 2rem;
     right: 2rem;
     z-index: 1000;
-  }
-  .contactoWa div img:hover{
+}
+.contactoWa div img:hover{
     transform: scale(1.5,1.5);
-  }
+}
+a {
+    color: black;
+    text-decoration: none;
+}
