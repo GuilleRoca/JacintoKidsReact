@@ -1,0 +1,66 @@
+.img{
+    height: 1rem
+}
+.container{
+    display: flex;
+    font-size:small;
+    padding: 0px 25px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: beige;
+}
+@mixin white-gradient {
+	background: linear-gradient(to right,  beige 0%,rgba(255,255,255,0) 100%);
+}
+
+$animationSpeed: 40s;
+
+// Animation
+@keyframes scroll {
+	0% { transform: translateX(1000px); }
+	100% { transform: translateX(calc(-250px * 11))}
+}
+
+
+// Styling
+.slider {
+	background: beige;
+	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+	height: 20px;
+	margin: auto;
+	overflow:hidden;
+	position: relative;
+	width: 960px;
+	
+	&::before,
+	&::after {
+		@include white-gradient;
+		content: "";
+		height: 20px;
+		position: absolute;
+		width: 200px;
+		z-index: 2;
+	}
+	
+	&::after {
+		right: 0;
+		top: 0;
+		transform: rotateZ(180deg);
+	}
+
+	&::before {
+		left: 0;
+		top: 0;
+	}
+	
+	.slideTrack {
+		animation: scroll $animationSpeed linear infinite;
+		display: flex;
+		width: calc(250px * 14);
+	}
+	
+	.slide {
+		height: 20px;
+		width: 1150px;
+	}
+}
