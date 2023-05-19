@@ -16,11 +16,11 @@ const Footer = () => {
         
 				<div className="d-flex flex-column flex-fill mb-3 text-center">
           <h3>MENU</h3>
-          <div><a href="../index.html">Inicio</a></div>
-          <div><a href="./productos.html">Productos</a></div>
-          <div><a href="./mpagos.html">Medios de pago</a></div>
-          <div><a href="./ubicacion.html">Ubicación</a></div>
-          <div><a href="./contacto.html">Contacto</a></div>
+          <div><a href="./home">Inicio</a></div>
+          <div><a href="./productos">Productos</a></div>
+          <div><a href="./pagos">Medios de pago</a></div>
+          <div><a href="./ubicacion">Ubicación</a></div>
+          <div><a href="./contacto">Contacto</a></div>
         </div>
         
 				<div className="d-flex flex-column flex-fill mb-3 text-center">
