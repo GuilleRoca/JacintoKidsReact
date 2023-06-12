@@ -1,10 +1,10 @@
 import style from './spinner.module.css'
 
 
-const spinner = () => {
+const Spinner = () => {
   return (
     <div className={style.loader}></div>
   )
 }
 
-export default spinner
+export default Spinner

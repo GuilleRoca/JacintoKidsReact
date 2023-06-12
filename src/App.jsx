@@ -14,29 +14,22 @@ import CreateUser from './components/CreateUser'
 import Payments from './components/Payments'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
-import Spinner from './components/Spinner'
 
 
 function App() {
 
   const [categorias, setCategorias] = useState([])
-  const [loading, setLoading] = useState(true)
 
   const fetchProductos = async () => {
     const {data} = await axios.get('https://api.mercadolibre.com/sites/MLA/search?seller_id=138745311')
     setCategorias(data.available_filters[0].values)
-    setLoading(false)
   }
 
-  console.table(categorias)
-
+  
   useEffect(() => {
     fetchProductos()
-/*     getUsers() */
   }, [])
     
-  if (loading) { return <Spinner/>}
-
 
   return (
     <>
